@@ -14,6 +14,11 @@
 		F3BA82B51EFA54BF00E64484 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3BA82B31EFA54BF00E64484 /* LaunchScreen.storyboard */; };
 		F3BA82C01EFA54BF00E64484 /* FrainzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BA82BF1EFA54BF00E64484 /* FrainzTests.swift */; };
 		F3BA82CB1EFA54BF00E64484 /* FrainzUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BA82CA1EFA54BF00E64484 /* FrainzUITests.swift */; };
+		F3BA82DD1EFA791400E64484 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3BA82D91EFA791400E64484 /* TwitterCore.framework */; };
+		F3BA82DE1EFA791400E64484 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3BA82DA1EFA791400E64484 /* TwitterKit.framework */; };
+		F3BA82DF1EFA791400E64484 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F3BA82DB1EFA791400E64484 /* TwitterKitResources.bundle */; };
+		F3BA82E01EFA791400E64484 /* TwitterShareExtensionUIResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F3BA82DC1EFA791400E64484 /* TwitterShareExtensionUIResources.bundle */; };
+		F3BA82E21EFA8BD400E64484 /* ListTimeLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BA82E11EFA8BD400E64484 /* ListTimeLineViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		F3BA82C61EFA54BF00E64484 /* FrainzUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrainzUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3BA82CA1EFA54BF00E64484 /* FrainzUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrainzUITests.swift; sourceTree = "<group>"; };
 		F3BA82CC1EFA54BF00E64484 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3BA82D91EFA791400E64484 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
+		F3BA82DA1EFA791400E64484 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
+		F3BA82DB1EFA791400E64484 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TwitterKitResources.bundle; sourceTree = "<group>"; };
+		F3BA82DC1EFA791400E64484 /* TwitterShareExtensionUIResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TwitterShareExtensionUIResources.bundle; sourceTree = "<group>"; };
+		F3BA82E11EFA8BD400E64484 /* ListTimeLineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTimeLineViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3BA82DD1EFA791400E64484 /* TwitterCore.framework in Frameworks */,
+				F3BA82DE1EFA791400E64484 /* TwitterKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +89,7 @@
 		F3BA829E1EFA54BE00E64484 = {
 			isa = PBXGroup;
 			children = (
+				F3BA82D81EFA791400E64484 /* TwitterKitManual */,
 				F3BA82A91EFA54BE00E64484 /* Frainz */,
 				F3BA82BE1EFA54BF00E64484 /* FrainzTests */,
 				F3BA82C91EFA54BF00E64484 /* FrainzUITests */,
@@ -100,6 +113,7 @@
 				F3BA82AA1EFA54BF00E64484 /* AppDelegate.swift */,
 				F3BA82AC1EFA54BF00E64484 /* ViewController.swift */,
 				F3BA82AE1EFA54BF00E64484 /* Main.storyboard */,
+				F3BA82E11EFA8BD400E64484 /* ListTimeLineViewController.swift */,
 				F3BA82B11EFA54BF00E64484 /* Assets.xcassets */,
 				F3BA82B31EFA54BF00E64484 /* LaunchScreen.storyboard */,
 				F3BA82B61EFA54BF00E64484 /* Info.plist */,
@@ -123,6 +137,17 @@
 				F3BA82CC1EFA54BF00E64484 /* Info.plist */,
 			);
 			path = FrainzUITests;
+			sourceTree = "<group>";
+		};
+		F3BA82D81EFA791400E64484 /* TwitterKitManual */ = {
+			isa = PBXGroup;
+			children = (
+				F3BA82D91EFA791400E64484 /* TwitterCore.framework */,
+				F3BA82DA1EFA791400E64484 /* TwitterKit.framework */,
+				F3BA82DB1EFA791400E64484 /* TwitterKitResources.bundle */,
+				F3BA82DC1EFA791400E64484 /* TwitterShareExtensionUIResources.bundle */,
+			);
+			path = TwitterKitManual;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,9 +260,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3BA82DF1EFA791400E64484 /* TwitterKitResources.bundle in Resources */,
 				F3BA82B51EFA54BF00E64484 /* LaunchScreen.storyboard in Resources */,
 				F3BA82B21EFA54BF00E64484 /* Assets.xcassets in Resources */,
 				F3BA82B01EFA54BF00E64484 /* Main.storyboard in Resources */,
+				F3BA82E01EFA791400E64484 /* TwitterShareExtensionUIResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3BA82E21EFA8BD400E64484 /* ListTimeLineViewController.swift in Sources */,
 				F3BA82AD1EFA54BF00E64484 /* ViewController.swift in Sources */,
 				F3BA82AB1EFA54BF00E64484 /* AppDelegate.swift in Sources */,
 			);
@@ -418,6 +446,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = XB7MJW3L9F;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TwitterKitManual",
+				);
 				INFOPLIST_FILE = Frainz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.Frainz;
@@ -431,6 +463,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = XB7MJW3L9F;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TwitterKitManual",
+				);
 				INFOPLIST_FILE = Frainz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.Frainz;
